@@ -1,0 +1,6 @@
+framework module Pods_EthereumSignerAppTests {
+  umbrella header "Pods-EthereumSignerAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

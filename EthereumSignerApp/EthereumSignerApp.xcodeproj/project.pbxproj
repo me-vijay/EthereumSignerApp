@@ -1,0 +1,1052 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15C1FF967B751F9F7A7026FB /* Pods_EthereumSignerAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5CFBDDF6054C8D22EDC2D0B /* Pods_EthereumSignerAppTests.framework */; };
+		203E30BA22B8FAD40008DB1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203E30B922B8FAD40008DB1D /* AppDelegate.swift */; };
+		203E30BF22B8FAD40008DB1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203E30BD22B8FAD40008DB1D /* Main.storyboard */; };
+		203E30C122B8FAD50008DB1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 203E30C022B8FAD50008DB1D /* Assets.xcassets */; };
+		203E30C422B8FAD50008DB1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203E30C222B8FAD50008DB1D /* LaunchScreen.storyboard */; };
+		203E30E022B907750008DB1D /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203E30DF22B907750008DB1D /* SetupViewController.swift */; };
+		203E30E522B915D00008DB1D /* SetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203E30E422B915D00008DB1D /* SetupViewModel.swift */; };
+		203E30E822B926AF0008DB1D /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203E30E722B926AF0008DB1D /* AppConfig.swift */; };
+		203E311122BAE18C0008DB1D /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203E311022BAE18C0008DB1D /* UIAlertControllerExtension.swift */; };
+		20AD2B8A22BBA8AB00C9EB92 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2B8922BBA8AB00C9EB92 /* AccountViewController.swift */; };
+		20AD2B8E22BBAB1600C9EB92 /* SigningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2B8D22BBAB1600C9EB92 /* SigningViewController.swift */; };
+		20AD2B9022BBAB2400C9EB92 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2B8F22BBAB2400C9EB92 /* VerificationViewController.swift */; };
+		20AD2B9322BBAF4500C9EB92 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2B9222BBAF4500C9EB92 /* AccountViewModel.swift */; };
+		20AD2B9922BBB3ED00C9EB92 /* AbstractCryptoServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2B9822BBB3ED00C9EB92 /* AbstractCryptoServiceProvider.swift */; };
+		20AD2B9B22BBB72C00C9EB92 /* EtherServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2B9A22BBB72C00C9EB92 /* EtherServiceProvider.swift */; };
+		20AD2B9D22BBC54B00C9EB92 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2B9C22BBC54B00C9EB92 /* Alert.swift */; };
+		20AD2B9F22BBC58900C9EB92 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2B9E22BBC58900C9EB92 /* Segue.swift */; };
+		20AD2BB922BCEA2E00C9EB92 /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2BB822BCEA2E00C9EB92 /* SignatureViewController.swift */; };
+		20AD2BBC22BCF04B00C9EB92 /* SignatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2BBB22BCF04B00C9EB92 /* SignatureViewModel.swift */; };
+		20AD2BC522BD065700C9EB92 /* SigningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2BC422BD065700C9EB92 /* SigningViewModel.swift */; };
+		20AD2BC722BD16A500C9EB92 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2BC622BD16A500C9EB92 /* UIStoryboardExtension.swift */; };
+		20AD2BCC22BD1B9900C9EB92 /* GnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2BCB22BD1B9900C9EB92 /* GnosisViewController.swift */; };
+		20AD2BCF22BD42E300C9EB92 /* VerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2BCE22BD42E300C9EB92 /* VerificationViewModel.swift */; };
+		20AD2BD322BD881500C9EB92 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2BD222BD881500C9EB92 /* DataExtension.swift */; };
+		20AD2C0122BE510000C9EB92 /* GnosisQRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2BFA22BE510000C9EB92 /* GnosisQRGenerator.swift */; };
+		20AD2C0222BE510000C9EB92 /* GnosisQRScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2BFC22BE510000C9EB92 /* GnosisQRScannerDelegate.swift */; };
+		20AD2C0322BE510000C9EB92 /* GnosisQRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2BFE22BE510000C9EB92 /* GnosisQRScanner.swift */; };
+		20AD2C0422BE510000C9EB92 /* GnosisQRScannerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C0022BE510000C9EB92 /* GnosisQRScannerError.swift */; };
+		20AD2C0722BE554600C9EB92 /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C0622BE554600C9EB92 /* QRCodeScannerViewController.swift */; };
+		20AD2C0A22BE556C00C9EB92 /* QRCodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C0922BE556C00C9EB92 /* QRCodeScannerViewModel.swift */; };
+		20AD2C0D22BE6FA700C9EB92 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C0C22BE6FA700C9EB92 /* Common.swift */; };
+		20AD2C0F22BE702100C9EB92 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C0E22BE702100C9EB92 /* UITextFieldExtension.swift */; };
+		20AD2C1522BE887B00C9EB92 /* EtherServiceProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C1422BE887B00C9EB92 /* EtherServiceProviderTests.swift */; };
+		20AD2C1C22BEC88100C9EB92 /* SetupViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C1B22BEC88100C9EB92 /* SetupViewModelTests.swift */; };
+		20AD2C1E22BEC8ED00C9EB92 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C1D22BEC8ED00C9EB92 /* TestConstants.swift */; };
+		20AD2C2122BED00500C9EB92 /* AccountViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C2022BED00500C9EB92 /* AccountViewModelTests.swift */; };
+		20AD2C2422BEDF4200C9EB92 /* SigningiewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C2322BEDF4200C9EB92 /* SigningiewModelTests.swift */; };
+		20AD2C2622BEE0DD00C9EB92 /* MockServiceProviderSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C2522BEE0DD00C9EB92 /* MockServiceProviderSuccess.swift */; };
+		20AD2C2822BEE4A300C9EB92 /* MockQRGeneratorSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C2722BEE4A300C9EB92 /* MockQRGeneratorSuccess.swift */; };
+		20AD2C2A22BEE55200C9EB92 /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C2922BEE55200C9EB92 /* QRGenerator.swift */; };
+		20AD2C2C22BEEA8000C9EB92 /* MockServiceProviderFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C2B22BEEA8000C9EB92 /* MockServiceProviderFailure.swift */; };
+		20AD2C2E22BEEC1600C9EB92 /* TestCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C2D22BEEC1600C9EB92 /* TestCommon.swift */; };
+		20AD2C3022BEECBF00C9EB92 /* MockQRGeneratorFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C2F22BEECBF00C9EB92 /* MockQRGeneratorFailure.swift */; };
+		20AD2C3322BEF72B00C9EB92 /* SignatureViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C3222BEF72B00C9EB92 /* SignatureViewModelTests.swift */; };
+		20AD2C3622BF045900C9EB92 /* VerificationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C3522BF045900C9EB92 /* VerificationViewModelTests.swift */; };
+		20AD2C3922BF0A2900C9EB92 /* QRCodeScannerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2C3822BF0A2900C9EB92 /* QRCodeScannerViewModelTests.swift */; };
+		AC762A55A64A6A088906372B /* Pods_EthereumSignerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857CC69E913AC0AC2C247CFB /* Pods_EthereumSignerApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		203E30CB22B8FAD50008DB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 203E30AE22B8FAD30008DB1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 203E30B522B8FAD30008DB1D;
+			remoteInfo = EthereumSignerApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		203E30B622B8FAD30008DB1D /* EthereumSignerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthereumSignerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		203E30B922B8FAD40008DB1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		203E30BE22B8FAD40008DB1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		203E30C022B8FAD50008DB1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		203E30C322B8FAD50008DB1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		203E30C522B8FAD50008DB1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		203E30CA22B8FAD50008DB1D /* EthereumSignerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EthereumSignerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		203E30D022B8FAD50008DB1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		203E30DF22B907750008DB1D /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		203E30E422B915D00008DB1D /* SetupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewModel.swift; sourceTree = "<group>"; };
+		203E30E722B926AF0008DB1D /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		203E311022BAE18C0008DB1D /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		20AD2B8922BBA8AB00C9EB92 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		20AD2B8D22BBAB1600C9EB92 /* SigningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningViewController.swift; sourceTree = "<group>"; };
+		20AD2B8F22BBAB2400C9EB92 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		20AD2B9222BBAF4500C9EB92 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		20AD2B9822BBB3ED00C9EB92 /* AbstractCryptoServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractCryptoServiceProvider.swift; sourceTree = "<group>"; };
+		20AD2B9A22BBB72C00C9EB92 /* EtherServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherServiceProvider.swift; sourceTree = "<group>"; };
+		20AD2B9C22BBC54B00C9EB92 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		20AD2B9E22BBC58900C9EB92 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		20AD2BB822BCEA2E00C9EB92 /* SignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
+		20AD2BBB22BCF04B00C9EB92 /* SignatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewModel.swift; sourceTree = "<group>"; };
+		20AD2BC422BD065700C9EB92 /* SigningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningViewModel.swift; sourceTree = "<group>"; };
+		20AD2BC622BD16A500C9EB92 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		20AD2BCB22BD1B9900C9EB92 /* GnosisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnosisViewController.swift; sourceTree = "<group>"; };
+		20AD2BCE22BD42E300C9EB92 /* VerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewModel.swift; sourceTree = "<group>"; };
+		20AD2BD222BD881500C9EB92 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		20AD2BFA22BE510000C9EB92 /* GnosisQRGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GnosisQRGenerator.swift; sourceTree = "<group>"; };
+		20AD2BFC22BE510000C9EB92 /* GnosisQRScannerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GnosisQRScannerDelegate.swift; sourceTree = "<group>"; };
+		20AD2BFE22BE510000C9EB92 /* GnosisQRScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GnosisQRScanner.swift; sourceTree = "<group>"; };
+		20AD2C0022BE510000C9EB92 /* GnosisQRScannerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GnosisQRScannerError.swift; sourceTree = "<group>"; };
+		20AD2C0622BE554600C9EB92 /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		20AD2C0922BE556C00C9EB92 /* QRCodeScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewModel.swift; sourceTree = "<group>"; };
+		20AD2C0C22BE6FA700C9EB92 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		20AD2C0E22BE702100C9EB92 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		20AD2C1422BE887B00C9EB92 /* EtherServiceProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherServiceProviderTests.swift; sourceTree = "<group>"; };
+		20AD2C1B22BEC88100C9EB92 /* SetupViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewModelTests.swift; sourceTree = "<group>"; };
+		20AD2C1D22BEC8ED00C9EB92 /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		20AD2C2022BED00500C9EB92 /* AccountViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModelTests.swift; sourceTree = "<group>"; };
+		20AD2C2322BEDF4200C9EB92 /* SigningiewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningiewModelTests.swift; sourceTree = "<group>"; };
+		20AD2C2522BEE0DD00C9EB92 /* MockServiceProviderSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceProviderSuccess.swift; sourceTree = "<group>"; };
+		20AD2C2722BEE4A300C9EB92 /* MockQRGeneratorSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockQRGeneratorSuccess.swift; sourceTree = "<group>"; };
+		20AD2C2922BEE55200C9EB92 /* QRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGenerator.swift; sourceTree = "<group>"; };
+		20AD2C2B22BEEA8000C9EB92 /* MockServiceProviderFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceProviderFailure.swift; sourceTree = "<group>"; };
+		20AD2C2D22BEEC1600C9EB92 /* TestCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCommon.swift; sourceTree = "<group>"; };
+		20AD2C2F22BEECBF00C9EB92 /* MockQRGeneratorFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockQRGeneratorFailure.swift; sourceTree = "<group>"; };
+		20AD2C3222BEF72B00C9EB92 /* SignatureViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewModelTests.swift; sourceTree = "<group>"; };
+		20AD2C3522BF045900C9EB92 /* VerificationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewModelTests.swift; sourceTree = "<group>"; };
+		20AD2C3822BF0A2900C9EB92 /* QRCodeScannerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewModelTests.swift; sourceTree = "<group>"; };
+		7B2D690DFDD6BEB4E4139E79 /* Pods-EthereumSignerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EthereumSignerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EthereumSignerApp/Pods-EthereumSignerApp.debug.xcconfig"; sourceTree = "<group>"; };
+		853D8CEABE091682C3B8F9F0 /* Pods-EthereumSignerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EthereumSignerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-EthereumSignerApp/Pods-EthereumSignerApp.release.xcconfig"; sourceTree = "<group>"; };
+		857CC69E913AC0AC2C247CFB /* Pods_EthereumSignerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EthereumSignerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D7E2869E9395587C2C887E /* Pods-EthereumSignerAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EthereumSignerAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EthereumSignerAppTests/Pods-EthereumSignerAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5CFBDDF6054C8D22EDC2D0B /* Pods_EthereumSignerAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EthereumSignerAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91EAAC05C3955E5721FAA00 /* Pods-EthereumSignerAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EthereumSignerAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EthereumSignerAppTests/Pods-EthereumSignerAppTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		203E30B322B8FAD30008DB1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC762A55A64A6A088906372B /* Pods_EthereumSignerApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		203E30C722B8FAD50008DB1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C1FF967B751F9F7A7026FB /* Pods_EthereumSignerAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D2D9B5707CF49F043E5B800 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B2D690DFDD6BEB4E4139E79 /* Pods-EthereumSignerApp.debug.xcconfig */,
+				853D8CEABE091682C3B8F9F0 /* Pods-EthereumSignerApp.release.xcconfig */,
+				C2D7E2869E9395587C2C887E /* Pods-EthereumSignerAppTests.debug.xcconfig */,
+				F91EAAC05C3955E5721FAA00 /* Pods-EthereumSignerAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		203E30AD22B8FAD30008DB1D = {
+			isa = PBXGroup;
+			children = (
+				203E30B822B8FAD30008DB1D /* EthereumSignerApp */,
+				203E30CD22B8FAD50008DB1D /* EthereumSignerAppTests */,
+				203E30B722B8FAD30008DB1D /* Products */,
+				1D2D9B5707CF49F043E5B800 /* Pods */,
+				B9B7D4649576AC3ECBBF3E32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		203E30B722B8FAD30008DB1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				203E30B622B8FAD30008DB1D /* EthereumSignerApp.app */,
+				203E30CA22B8FAD50008DB1D /* EthereumSignerAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		203E30B822B8FAD30008DB1D /* EthereumSignerApp */ = {
+			isa = PBXGroup;
+			children = (
+				203E30DB22B905C60008DB1D /* Source */,
+				203E30E122B90D890008DB1D /* Storyboards */,
+				203E30DD22B9061C0008DB1D /* Resources */,
+				203E30DC22B905E70008DB1D /* SupportingFiles */,
+			);
+			path = EthereumSignerApp;
+			sourceTree = "<group>";
+		};
+		203E30CD22B8FAD50008DB1D /* EthereumSignerAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2C3C22BF13BE00C9EB92 /* TestConstants */,
+				20AD2C3B22BF13A900C9EB92 /* TestCommon */,
+				20AD2C3A22BF139F00C9EB92 /* Mocks */,
+				20AD2C1A22BEC85200C9EB92 /* SetupViewModelTests */,
+				20AD2C1F22BECFE100C9EB92 /* AccountViewModelTests */,
+				20AD2C2222BEDF0100C9EB92 /* SigningiewModelTests */,
+				20AD2C3122BEF71500C9EB92 /* SignatureViewModelTests */,
+				20AD2C3422BF043700C9EB92 /* VerificationViewModelTests */,
+				20AD2C3722BF09F300C9EB92 /* QRCodeScannerViewModelTests */,
+				20AD2C1122BE883600C9EB92 /* EtherServiceProviderTests */,
+				20AD2C3D22BF13F300C9EB92 /* SupportingFiles */,
+			);
+			path = EthereumSignerAppTests;
+			sourceTree = "<group>";
+		};
+		203E30DA22B9054C0008DB1D /* SetupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				203E30DF22B907750008DB1D /* SetupViewController.swift */,
+				203E30E322B915690008DB1D /* ViewModels */,
+			);
+			path = SetupViewController;
+			sourceTree = "<group>";
+		};
+		203E30DB22B905C60008DB1D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2BF822BE50AD00C9EB92 /* QR Component */,
+				20AD2C0B22BE6F9500C9EB92 /* Common */,
+				20AD2BCA22BD1B8300C9EB92 /* Protocols */,
+				203E30E622B926610008DB1D /* Constants */,
+				203E30DE22B9064A0008DB1D /* AppDelegate */,
+				20AD2B9722BBB3ED00C9EB92 /* ServiceProviders */,
+				203E310F22BAE1510008DB1D /* Extensions */,
+				203E30E222B915570008DB1D /* ViewControllers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		203E30DC22B905E70008DB1D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				203E30C522B8FAD50008DB1D /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		203E30DD22B9061C0008DB1D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				203E30C022B8FAD50008DB1D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		203E30DE22B9064A0008DB1D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				203E30B922B8FAD40008DB1D /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		203E30E122B90D890008DB1D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				203E30BD22B8FAD40008DB1D /* Main.storyboard */,
+				203E30C222B8FAD50008DB1D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		203E30E222B915570008DB1D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				203E30DA22B9054C0008DB1D /* SetupViewController */,
+				20AD2B8622BBA86C00C9EB92 /* AccountViewController */,
+				20AD2B8B22BBAAEE00C9EB92 /* SigningViewController */,
+				20AD2BB722BCEA0900C9EB92 /* SignatureViewController */,
+				20AD2B8C22BBAAF900C9EB92 /* VerificationViewController */,
+				20AD2C0522BE550D00C9EB92 /* QRCodeScannerViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		203E30E322B915690008DB1D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				203E30E422B915D00008DB1D /* SetupViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		203E30E622B926610008DB1D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				203E30E722B926AF0008DB1D /* AppConfig.swift */,
+				20AD2B9C22BBC54B00C9EB92 /* Alert.swift */,
+				20AD2B9E22BBC58900C9EB92 /* Segue.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		203E310F22BAE1510008DB1D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				203E311022BAE18C0008DB1D /* UIAlertControllerExtension.swift */,
+				20AD2BC622BD16A500C9EB92 /* UIStoryboardExtension.swift */,
+				20AD2BD222BD881500C9EB92 /* DataExtension.swift */,
+				20AD2C0E22BE702100C9EB92 /* UITextFieldExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		20AD2B8622BBA86C00C9EB92 /* AccountViewController */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2B8922BBA8AB00C9EB92 /* AccountViewController.swift */,
+				20AD2B9122BBAF3200C9EB92 /* ViewModels */,
+			);
+			path = AccountViewController;
+			sourceTree = "<group>";
+		};
+		20AD2B8B22BBAAEE00C9EB92 /* SigningViewController */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2B8D22BBAB1600C9EB92 /* SigningViewController.swift */,
+				20AD2BC322BD064200C9EB92 /* ViewModels */,
+			);
+			path = SigningViewController;
+			sourceTree = "<group>";
+		};
+		20AD2B8C22BBAAF900C9EB92 /* VerificationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2B8F22BBAB2400C9EB92 /* VerificationViewController.swift */,
+				20AD2BCD22BD42C600C9EB92 /* ViewModels */,
+			);
+			path = VerificationViewController;
+			sourceTree = "<group>";
+		};
+		20AD2B9122BBAF3200C9EB92 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2B9222BBAF4500C9EB92 /* AccountViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		20AD2B9722BBB3ED00C9EB92 /* ServiceProviders */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2B9822BBB3ED00C9EB92 /* AbstractCryptoServiceProvider.swift */,
+				20AD2B9A22BBB72C00C9EB92 /* EtherServiceProvider.swift */,
+			);
+			path = ServiceProviders;
+			sourceTree = "<group>";
+		};
+		20AD2BB722BCEA0900C9EB92 /* SignatureViewController */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2BB822BCEA2E00C9EB92 /* SignatureViewController.swift */,
+				20AD2BBA22BCF03400C9EB92 /* ViewModels */,
+			);
+			path = SignatureViewController;
+			sourceTree = "<group>";
+		};
+		20AD2BBA22BCF03400C9EB92 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2BBB22BCF04B00C9EB92 /* SignatureViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		20AD2BC322BD064200C9EB92 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2BC422BD065700C9EB92 /* SigningViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		20AD2BCA22BD1B8300C9EB92 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2BCB22BD1B9900C9EB92 /* GnosisViewController.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		20AD2BCD22BD42C600C9EB92 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2BCE22BD42E300C9EB92 /* VerificationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		20AD2BF822BE50AD00C9EB92 /* QR Component */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2BFF22BE510000C9EB92 /* Common */,
+				20AD2BFB22BE510000C9EB92 /* Protocols */,
+				20AD2BF922BE510000C9EB92 /* QRGenerator */,
+				20AD2BFD22BE510000C9EB92 /* QRScanner */,
+			);
+			path = "QR Component";
+			sourceTree = "<group>";
+		};
+		20AD2BF922BE510000C9EB92 /* QRGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2BFA22BE510000C9EB92 /* GnosisQRGenerator.swift */,
+			);
+			path = QRGenerator;
+			sourceTree = "<group>";
+		};
+		20AD2BFB22BE510000C9EB92 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2BFC22BE510000C9EB92 /* GnosisQRScannerDelegate.swift */,
+				20AD2C2922BEE55200C9EB92 /* QRGenerator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		20AD2BFD22BE510000C9EB92 /* QRScanner */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2BFE22BE510000C9EB92 /* GnosisQRScanner.swift */,
+			);
+			path = QRScanner;
+			sourceTree = "<group>";
+		};
+		20AD2BFF22BE510000C9EB92 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2C0022BE510000C9EB92 /* GnosisQRScannerError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		20AD2C0522BE550D00C9EB92 /* QRCodeScannerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2C0622BE554600C9EB92 /* QRCodeScannerViewController.swift */,
+				20AD2C0822BE555300C9EB92 /* ViewModels */,
+			);
+			path = QRCodeScannerViewController;
+			sourceTree = "<group>";
+		};
+		20AD2C0822BE555300C9EB92 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2C0922BE556C00C9EB92 /* QRCodeScannerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		20AD2C0B22BE6F9500C9EB92 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2C0C22BE6FA700C9EB92 /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		20AD2C1122BE883600C9EB92 /* EtherServiceProviderTests */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2C1422BE887B00C9EB92 /* EtherServiceProviderTests.swift */,
+			);
+			path = EtherServiceProviderTests;
+			sourceTree = "<group>";
+		};
+		20AD2C1A22BEC85200C9EB92 /* SetupViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2C1B22BEC88100C9EB92 /* SetupViewModelTests.swift */,
+			);
+			path = SetupViewModelTests;
+			sourceTree = "<group>";
+		};
+		20AD2C1F22BECFE100C9EB92 /* AccountViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2C2022BED00500C9EB92 /* AccountViewModelTests.swift */,
+			);
+			path = AccountViewModelTests;
+			sourceTree = "<group>";
+		};
+		20AD2C2222BEDF0100C9EB92 /* SigningiewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2C2322BEDF4200C9EB92 /* SigningiewModelTests.swift */,
+			);
+			path = SigningiewModelTests;
+			sourceTree = "<group>";
+		};
+		20AD2C3122BEF71500C9EB92 /* SignatureViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2C3222BEF72B00C9EB92 /* SignatureViewModelTests.swift */,
+			);
+			path = SignatureViewModelTests;
+			sourceTree = "<group>";
+		};
+		20AD2C3422BF043700C9EB92 /* VerificationViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2C3522BF045900C9EB92 /* VerificationViewModelTests.swift */,
+			);
+			path = VerificationViewModelTests;
+			sourceTree = "<group>";
+		};
+		20AD2C3722BF09F300C9EB92 /* QRCodeScannerViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2C3822BF0A2900C9EB92 /* QRCodeScannerViewModelTests.swift */,
+			);
+			path = QRCodeScannerViewModelTests;
+			sourceTree = "<group>";
+		};
+		20AD2C3A22BF139F00C9EB92 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2C2522BEE0DD00C9EB92 /* MockServiceProviderSuccess.swift */,
+				20AD2C2B22BEEA8000C9EB92 /* MockServiceProviderFailure.swift */,
+				20AD2C2722BEE4A300C9EB92 /* MockQRGeneratorSuccess.swift */,
+				20AD2C2F22BEECBF00C9EB92 /* MockQRGeneratorFailure.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		20AD2C3B22BF13A900C9EB92 /* TestCommon */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2C2D22BEEC1600C9EB92 /* TestCommon.swift */,
+			);
+			path = TestCommon;
+			sourceTree = "<group>";
+		};
+		20AD2C3C22BF13BE00C9EB92 /* TestConstants */ = {
+			isa = PBXGroup;
+			children = (
+				20AD2C1D22BEC8ED00C9EB92 /* TestConstants.swift */,
+			);
+			path = TestConstants;
+			sourceTree = "<group>";
+		};
+		20AD2C3D22BF13F300C9EB92 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				203E30D022B8FAD50008DB1D /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B9B7D4649576AC3ECBBF3E32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				857CC69E913AC0AC2C247CFB /* Pods_EthereumSignerApp.framework */,
+				C5CFBDDF6054C8D22EDC2D0B /* Pods_EthereumSignerAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		203E30B522B8FAD30008DB1D /* EthereumSignerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 203E30D322B8FAD50008DB1D /* Build configuration list for PBXNativeTarget "EthereumSignerApp" */;
+			buildPhases = (
+				15BB2C71523552CD0A2342C7 /* [CP] Check Pods Manifest.lock */,
+				203E30B222B8FAD30008DB1D /* Sources */,
+				203E30B322B8FAD30008DB1D /* Frameworks */,
+				203E30B422B8FAD30008DB1D /* Resources */,
+				D90A8B36EE539D9E9392F94E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EthereumSignerApp;
+			productName = EthereumSignerApp;
+			productReference = 203E30B622B8FAD30008DB1D /* EthereumSignerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		203E30C922B8FAD50008DB1D /* EthereumSignerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 203E30D622B8FAD50008DB1D /* Build configuration list for PBXNativeTarget "EthereumSignerAppTests" */;
+			buildPhases = (
+				0111139957505F138586B185 /* [CP] Check Pods Manifest.lock */,
+				203E30C622B8FAD50008DB1D /* Sources */,
+				203E30C722B8FAD50008DB1D /* Frameworks */,
+				203E30C822B8FAD50008DB1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				203E30CC22B8FAD50008DB1D /* PBXTargetDependency */,
+			);
+			name = EthereumSignerAppTests;
+			productName = EthereumSignerAppTests;
+			productReference = 203E30CA22B8FAD50008DB1D /* EthereumSignerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		203E30AE22B8FAD30008DB1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Vijay;
+				TargetAttributes = {
+					203E30B522B8FAD30008DB1D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					203E30C922B8FAD50008DB1D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 203E30B522B8FAD30008DB1D;
+					};
+				};
+			};
+			buildConfigurationList = 203E30B122B8FAD30008DB1D /* Build configuration list for PBXProject "EthereumSignerApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 203E30AD22B8FAD30008DB1D;
+			productRefGroup = 203E30B722B8FAD30008DB1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				203E30B522B8FAD30008DB1D /* EthereumSignerApp */,
+				203E30C922B8FAD50008DB1D /* EthereumSignerAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		203E30B422B8FAD30008DB1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				203E30C422B8FAD50008DB1D /* LaunchScreen.storyboard in Resources */,
+				203E30C122B8FAD50008DB1D /* Assets.xcassets in Resources */,
+				203E30BF22B8FAD40008DB1D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		203E30C822B8FAD50008DB1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0111139957505F138586B185 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EthereumSignerAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15BB2C71523552CD0A2342C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EthereumSignerApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D90A8B36EE539D9E9392F94E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EthereumSignerApp/Pods-EthereumSignerApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/keccak.c/keccak.framework",
+				"${BUILT_PRODUCTS_DIR}/scrypt.c/scrypt.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1.c/secp256k1.framework",
+				"${BUILT_PRODUCTS_DIR}/web3swift/web3swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/keccak.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/scrypt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EthereumSignerApp/Pods-EthereumSignerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		203E30B222B8FAD30008DB1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				203E30E522B915D00008DB1D /* SetupViewModel.swift in Sources */,
+				20AD2C2A22BEE55200C9EB92 /* QRGenerator.swift in Sources */,
+				20AD2BBC22BCF04B00C9EB92 /* SignatureViewModel.swift in Sources */,
+				20AD2BC522BD065700C9EB92 /* SigningViewModel.swift in Sources */,
+				20AD2C0422BE510000C9EB92 /* GnosisQRScannerError.swift in Sources */,
+				20AD2C0122BE510000C9EB92 /* GnosisQRGenerator.swift in Sources */,
+				203E30E822B926AF0008DB1D /* AppConfig.swift in Sources */,
+				20AD2BD322BD881500C9EB92 /* DataExtension.swift in Sources */,
+				20AD2BC722BD16A500C9EB92 /* UIStoryboardExtension.swift in Sources */,
+				20AD2C0322BE510000C9EB92 /* GnosisQRScanner.swift in Sources */,
+				20AD2BCC22BD1B9900C9EB92 /* GnosisViewController.swift in Sources */,
+				20AD2B9922BBB3ED00C9EB92 /* AbstractCryptoServiceProvider.swift in Sources */,
+				20AD2B8A22BBA8AB00C9EB92 /* AccountViewController.swift in Sources */,
+				20AD2B9F22BBC58900C9EB92 /* Segue.swift in Sources */,
+				20AD2C0F22BE702100C9EB92 /* UITextFieldExtension.swift in Sources */,
+				20AD2BB922BCEA2E00C9EB92 /* SignatureViewController.swift in Sources */,
+				20AD2C0A22BE556C00C9EB92 /* QRCodeScannerViewModel.swift in Sources */,
+				20AD2C0722BE554600C9EB92 /* QRCodeScannerViewController.swift in Sources */,
+				20AD2C0222BE510000C9EB92 /* GnosisQRScannerDelegate.swift in Sources */,
+				20AD2B9B22BBB72C00C9EB92 /* EtherServiceProvider.swift in Sources */,
+				20AD2B8E22BBAB1600C9EB92 /* SigningViewController.swift in Sources */,
+				20AD2C0D22BE6FA700C9EB92 /* Common.swift in Sources */,
+				20AD2BCF22BD42E300C9EB92 /* VerificationViewModel.swift in Sources */,
+				203E30E022B907750008DB1D /* SetupViewController.swift in Sources */,
+				20AD2B9D22BBC54B00C9EB92 /* Alert.swift in Sources */,
+				20AD2B9322BBAF4500C9EB92 /* AccountViewModel.swift in Sources */,
+				20AD2B9022BBAB2400C9EB92 /* VerificationViewController.swift in Sources */,
+				203E311122BAE18C0008DB1D /* UIAlertControllerExtension.swift in Sources */,
+				203E30BA22B8FAD40008DB1D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		203E30C622B8FAD50008DB1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AD2C3022BEECBF00C9EB92 /* MockQRGeneratorFailure.swift in Sources */,
+				20AD2C3322BEF72B00C9EB92 /* SignatureViewModelTests.swift in Sources */,
+				20AD2C2122BED00500C9EB92 /* AccountViewModelTests.swift in Sources */,
+				20AD2C1E22BEC8ED00C9EB92 /* TestConstants.swift in Sources */,
+				20AD2C2622BEE0DD00C9EB92 /* MockServiceProviderSuccess.swift in Sources */,
+				20AD2C1C22BEC88100C9EB92 /* SetupViewModelTests.swift in Sources */,
+				20AD2C2C22BEEA8000C9EB92 /* MockServiceProviderFailure.swift in Sources */,
+				20AD2C3622BF045900C9EB92 /* VerificationViewModelTests.swift in Sources */,
+				20AD2C3922BF0A2900C9EB92 /* QRCodeScannerViewModelTests.swift in Sources */,
+				20AD2C2822BEE4A300C9EB92 /* MockQRGeneratorSuccess.swift in Sources */,
+				20AD2C2E22BEEC1600C9EB92 /* TestCommon.swift in Sources */,
+				20AD2C2422BEDF4200C9EB92 /* SigningiewModelTests.swift in Sources */,
+				20AD2C1522BE887B00C9EB92 /* EtherServiceProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		203E30CC22B8FAD50008DB1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 203E30B522B8FAD30008DB1D /* EthereumSignerApp */;
+			targetProxy = 203E30CB22B8FAD50008DB1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		203E30BD22B8FAD40008DB1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				203E30BE22B8FAD40008DB1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		203E30C222B8FAD50008DB1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				203E30C322B8FAD50008DB1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		203E30D122B8FAD50008DB1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		203E30D222B8FAD50008DB1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		203E30D422B8FAD50008DB1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B2D690DFDD6BEB4E4139E79 /* Pods-EthereumSignerApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = EthereumSignerApp/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gnosis.ethereumsignerapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		203E30D522B8FAD50008DB1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 853D8CEABE091682C3B8F9F0 /* Pods-EthereumSignerApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = EthereumSignerApp/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gnosis.ethereumsignerapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		203E30D722B8FAD50008DB1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D7E2869E9395587C2C887E /* Pods-EthereumSignerAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EthereumSignerAppTests/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.EthereumSignerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EthereumSignerApp.app/EthereumSignerApp";
+			};
+			name = Debug;
+		};
+		203E30D822B8FAD50008DB1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F91EAAC05C3955E5721FAA00 /* Pods-EthereumSignerAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EthereumSignerAppTests/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.EthereumSignerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EthereumSignerApp.app/EthereumSignerApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		203E30B122B8FAD30008DB1D /* Build configuration list for PBXProject "EthereumSignerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				203E30D122B8FAD50008DB1D /* Debug */,
+				203E30D222B8FAD50008DB1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		203E30D322B8FAD50008DB1D /* Build configuration list for PBXNativeTarget "EthereumSignerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				203E30D422B8FAD50008DB1D /* Debug */,
+				203E30D522B8FAD50008DB1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		203E30D622B8FAD50008DB1D /* Build configuration list for PBXNativeTarget "EthereumSignerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				203E30D722B8FAD50008DB1D /* Debug */,
+				203E30D822B8FAD50008DB1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 203E30AE22B8FAD30008DB1D /* Project object */;
+}
